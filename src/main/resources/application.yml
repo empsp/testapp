@@ -1,0 +1,13 @@
+aws:
+  s3:
+    region: us-east-2
+    bucket: yourbucket
+    accessKeyId: yourKeyId
+    secretAccessKey: yourAccessKey
+
+testapp:
+  gateways:
+    food-image-retriever:
+      base-url: "https://foodish-api.herokuapp.com"
+      endpoints:
+        burgers-uri: "/api/images/burger"
